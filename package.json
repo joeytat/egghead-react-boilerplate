@@ -7,5 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joeytat",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeytat/egghead-react-boilerplate.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/joeytat/egghead-react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/joeytat/egghead-react-boilerplate#readme"
 }
