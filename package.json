@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
     "dev": "webpack-dev-server --open --config webpack.config.dev.js",
-    "dev:hot": "npm run dev -- --hot",
+    "dev:hot": "pretty-quick --staged && npm run dev -- --hot",
     "test": "jest",
     "format": "pretty-quick",
     "lint": "eslint ./"
@@ -20,6 +20,11 @@
   "keywords": [],
   "bugs": {
     "url": "https://github.com/joeytat/egghead-react-boilerplate/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test"
+    }
   },
   "homepage": "https://github.com/joeytat/egghead-react-boilerplate#readme",
   "devDependencies": {
@@ -38,6 +43,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^2.3.0",
     "jest": "^24.8.0",
     "jest-dom": "^3.2.2",
     "prettier": "^1.17.1",
